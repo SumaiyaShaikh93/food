@@ -32,7 +32,6 @@ html{
     z-index: -2;
     opacity: 0.4;  
 }
-
 /* Navigation bar Logo and image */
 #navbar{
     position: relative;
@@ -83,7 +82,7 @@ html{
 #home::before{
     content: "";
     position: absolute;
-    background: url('orgback.jpg');
+    background: url("/image/orgback.jpg");
     height:65%;
     width: 1300px;
     z-index: -1;
@@ -182,7 +181,7 @@ html{
 #client-section::before{
     content: "";
     position: absolute;
-    background: url('../pizzaback.jpg') no-repeat;
+    background: url('/image/pizzaback.jpg') no-repeat;
     width: 1300px;
     height: 55%;
     z-index: -1;
@@ -201,7 +200,7 @@ html{
 #contact::before{
     content: "";
     position: absolute;
-    background: url('../contactus.jpg')no-repeat;
+    background: url('/image/contactus.jpg')no-repeat;
     width: 1300px;
     height: 90%;
     z-index: -1;
