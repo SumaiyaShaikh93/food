@@ -1,0 +1,242 @@
+/*center reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+
+}
+/* CSS variable  */
+:root{
+    --navbar-height: 59px;
+}    
+
+/* Navigation  */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#navbar ::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    width: 64.5%;
+    z-index: -2;
+    opacity: 0.4;  
+}
+
+/* Navigation bar Logo and image */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+
+
+}
+#navbar ul li{
+    color: white; 
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+} 
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding:3px 22px ;
+    /* margin-top: 20px; */
+    border-radius: 20px;
+    text-decoration: none;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+} 
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;  
+} 
+
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('orgback.jpg');
+    height:65%;
+    width: 1300px;
+    z-index: -1;
+    opacity: 0.8;
+    object-fit: fill;
+    background-size: cover;
+    background-position: 0%;
+
+}
+
+#home h1{
+    color: white;
+    font-size: bold;
+     padding: 2%;
+     /* font-family: 'Oswald', sans-serif; */
+} 
+
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+
+}
+#client-section h1{
+    color: white;
+    text-shadow: black 2px 3px;
+
+}
+/* #home p{
+    color: black;
+} */
+#home p{
+    font-family:'Oswald', sans-serif;
+    color: white;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(61, 57, 57);
+    color: white;
+    box-shadow: 2px 1px black;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+.h-secondary{
+     font-size: 1.8rem;
+     padding: 12px;
+     font-size: bold;
+}
+#hed{
+    font-size: 2.8rem;
+    margin-top: 30px;
+}
+
+#service{
+    margin: 34px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid black;
+    padding: 33px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    background-color: rgb(238, 227, 227);
+
+}
+#service .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height: 344px;
+    /* position: relative; */
+}
+#client img{
+    height: 124px;
+}
+.client-item{
+    height: 34px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../pizzaback.jpg') no-repeat;
+    width: 1300px;
+    height: 55%;
+    z-index: -1;
+    /* opacity: 0.4; */
+    background-size: cover;
+    /* background-position: 0%; */
+}
+.client-item{
+    margin: 35px;
+}
+
+/* contact section  */
+#contact{
+    /* position: relative; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contactus.jpg')no-repeat;
+    width: 1300px;
+    height: 90%;
+    z-index: -1;
+    background-size: cover;
+    /* opacity: 0.7; */
+    /* background: url('../contactus.jpg'); */
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20 px;
+}
+
+#contact-box{
+    display: flex;
+    padding: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contac5-box label{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
